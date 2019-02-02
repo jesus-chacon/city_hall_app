@@ -1,0 +1,16 @@
+type Query {
+  feed: [Post!]!
+}
+
+type Post {
+  id: ID!
+  type: PostType!
+  title: String!
+  image: String!
+  description: String
+}
+
+enum PostType {
+  NEWS,
+  EVENT
+}
