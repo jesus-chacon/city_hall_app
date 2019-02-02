@@ -1,13 +1,16 @@
 {
-    "name": "node-graphql",
-    "version": "1.0.0",
-    "main": "index.js",
-    "license": "MIT",
-    "dependencies": {
-      "graphql-yoga": "^1.16.1",
-      "prisma-client-lib": "1.25.7"
-    },
-    "scripts": {
-      "start": "node src/index.js"
-    }
+  "name": "node-graphql",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "dependencies": {
+    "graphql-yoga": "^1.16.1",
+    "prisma-client-lib": "1.25.7"
+  },
+  "scripts": {
+    "start": "node src/index.js"
+  },
+  "devDependencies": {
+    "eslint": "^5.13.0"
+  }
 }
