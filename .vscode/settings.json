@@ -1,0 +1,21 @@
+{
+    "git.ignoreLimitWarning": true,
+    "files.associations": {
+        "**/client/src/**/**.js": "javascriptreact"
+    },
+    "eslint.validate": [
+        "javascript",
+        "javascriptreact"
+    ],
+    "eslint.workingDirectories": [
+        "./client/src",
+    ],
+    "editor.tabSize": 2,
+    "[javascriptreact]": {
+        "editor.tabSize": 2
+    },
+    "editor.detectIndentation": false,
+    "editor.formatOnPaste": true,
+    "editor.formatOnSave": true,
+    "files.insertFinalNewline": true
+}
