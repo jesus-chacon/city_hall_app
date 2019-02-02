@@ -1,0 +1,23 @@
+type User {
+  id: ID! @unique
+  name: String!
+  type: UserType!  
+}
+
+type Post {
+  id: ID! @unique
+  type: PostType!
+  title: String!
+  image: String!
+  description: String
+}
+
+enum PostType {
+  NEWS,
+  EVENT
+}
+
+enum UserType {
+  ADMIN,
+  CLIENT
+}
