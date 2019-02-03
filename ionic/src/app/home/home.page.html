@@ -8,13 +8,16 @@
 
 <ion-content padding>
   The world is your oyster.
-  <p>If you get lost, the <a target="_blank" rel="noopener" href="https://ionicframework.com/docs/">docs</a> will be
-    your guide.
+  <p>
+    If you get lost, the
+    <a target="_blank" rel="noopener" href="https://ionicframework.com/docs/">docs</a>
+    will be your guide.
   </p>
 
   <div *ngIf="loading">
     Loading...
   </div>
+
   <div *ngIf="error">
     Error :(
   </div>
@@ -26,5 +29,11 @@
       {{ feed.description }}
     </ion-item>
   </ion-list>
+
+  <ul *ngFor="let entry of data2 | async">
+    Id: {{entry.id}}
+    <br>
+    Title: {{ entry.title }}
+  </ul>
 
 </ion-content>
