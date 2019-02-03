@@ -1,5 +1,5 @@
 # Specifies the HTTP endpoint of your Prisma API.
-endpoint: http://localhost:4466
+endpoint: http://${env:PRISMA_HOST}:${env:PRISMA_PORT}
 
 # Defines your models, each model is mapped to the database as a table.
 datamodel: datamodel.prisma
@@ -21,4 +21,4 @@ seed:
   run: node ./prisma/seed.js
 
 # prisma seed password
-secret: go2devs
+secret: ${env:PRISMA_SECRET}

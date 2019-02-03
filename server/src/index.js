@@ -4,8 +4,6 @@ const { Query } = require("./resolvers");
 
 const { SERVER_PORT, SERVER_GRAPHQL, SERVER_PLAYGROUND } = process.env;
 
-console.log(process.env, SERVER_PORT);
-
 const server = new GraphQLServer({
   typeDefs: "./src/schema.graphql",
   resolvers: {

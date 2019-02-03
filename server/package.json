@@ -10,10 +10,12 @@
   },
   "scripts": {
     "start": "node src/index.js",
-    "dev": "nodemon -x node -r dotenv/config src/index.js"
+    "dev": "nodemon -x node -r dotenv/config src/index.js",
+    "prisma": "prisma"
   },
   "devDependencies": {
     "eslint": "^5.13.0",
-    "nodemon": "^1.18.9"
+    "nodemon": "^1.18.9",
+    "prisma": "^1.25.7"
   }
 }

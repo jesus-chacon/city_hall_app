@@ -15,12 +15,17 @@ Application for a city hall with prisma and ionic
 - config environment
 - start --> yarn start or yarn dev
 
-#### Environment
+#### Environment --> server/.env
 
 ```javascript
+PRISMA_PORT=4466
+PRISMA_HOST="localhost"
+PRISMA_SECRET="go2devs"
+
 SERVER_PORT=5000
 SERVER_PLAYGROUND="/playground"
 SERVER_GRAPHQL="/graphql"
+
 ```
 
 ### Client
