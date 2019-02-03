@@ -4,13 +4,16 @@
   "main": "index.js",
   "license": "MIT",
   "dependencies": {
+    "dotenv": "^6.2.0",
     "graphql-yoga": "^1.16.1",
     "prisma-client-lib": "1.25.7"
   },
   "scripts": {
-    "start": "node src/index.js"
+    "start": "node src/index.js",
+    "dev": "nodemon -x node -r dotenv/config src/index.js"
   },
   "devDependencies": {
-    "eslint": "^5.13.0"
+    "eslint": "^5.13.0",
+    "nodemon": "^1.18.9"
   }
 }
