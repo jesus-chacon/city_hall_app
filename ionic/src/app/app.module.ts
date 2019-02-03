@@ -13,9 +13,10 @@ import { AppRoutingModule } from './app-routing.module';
 import { ApolloModule, APOLLO_OPTIONS } from "apollo-angular";
 import { HttpLinkModule, HttpLink } from "apollo-angular-link-http";
 import { InMemoryCache } from "apollo-cache-inmemory";
+import { ChHeaderComponent } from './components/ch-header/ch-header.component';
 
 @NgModule({
-  declarations: [AppComponent],
+  declarations: [AppComponent, ChHeaderComponent,],
   entryComponents: [],
   imports: [
     BrowserModule,

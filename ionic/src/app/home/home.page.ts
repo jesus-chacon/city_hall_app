@@ -1,8 +1,8 @@
 import { Component, OnInit, OnDestroy } from '@angular/core';
 import { Apollo } from 'apollo-angular';
 import gql from 'graphql-tag';
-import { Subscription, Observable } from 'rxjs';
-import { map } from 'rxjs/operators';
+import { Subscription, Observable, of } from 'rxjs';
+import { map, catchError } from 'rxjs/operators';
 
 
 const Feed = gql`
@@ -42,7 +42,14 @@ export class HomePage implements OnInit, OnDestroy {
         });
 
     this.data2 = this.apollo.watchQuery<any>({ query: Feed })
-      .valueChanges.pipe(map(({ data }) => data.feed));
+      .valueChanges.pipe(
+        map(({ data }) => data.feed),
+        catchError(err => of(
+          this.error = true,
+          this.loading = false
+        ))
+      )
+
   }
 
   ngOnDestroy() {
