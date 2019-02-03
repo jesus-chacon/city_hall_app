@@ -1,3 +1,30 @@
-# city_hall_app
+# City Hall App
 
-$ sudo npm install -g ionic
+Application for a city hall with prisma and ionic
+
+## Requirements
+
+### Server
+
+- install docker
+- install docker-compose
+- start prisma mysql project
+- install prisma --> sudo npm install -g prisma
+- deploy prisma server --> prisma deploy
+- Create .env file
+- config environment
+- start --> yarn start or yarn dev
+
+#### Environment
+
+```javascript
+SERVER_PORT=5000
+SERVER_PLAYGROUND="/playground"
+SERVER_GRAPHQL="/graphql"
+```
+
+### Client
+
+```javascript
+sudo npm install -g ionic
+```
