@@ -1,6 +1,4 @@
-<ch-header>
-  <h1>Hola</h1>
-</ch-header>
+<ch-header></ch-header>
 
 <ion-content padding>
   The world is your oyster.
@@ -18,18 +16,11 @@
     Error :(
   </div>
 
-  <ion-list *ngIf="data">
-    <ion-item *ngFor="let feed of data">
-      {{ feed.title }}
+  <ion-list>
+    <ion-item *ngFor="let post of feed | async">
+      Id: {{post.id}}
       <br>
-      {{ feed.description }}
+      Title: {{ post.title }}
     </ion-item>
   </ion-list>
-
-  <ul *ngFor="let entry of data2 | async">
-    Id: {{entry.id}}
-    <br>
-    Title: {{ entry.title }}
-  </ul>
-
 </ion-content>
