@@ -3,7 +3,7 @@ import { Apollo } from 'apollo-angular';
 import { Observable, of } from 'rxjs';
 import { map, catchError } from 'rxjs/operators';
 
-import { Feed } from "../../../graphql";
+import { Feed } from "../../../graphql/query";
 
 @Component({
   selector: 'app-home',
