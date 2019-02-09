@@ -4,15 +4,15 @@ import { FormsModule } from '@angular/forms';
 
 import { IonicModule } from '@ionic/angular';
 
-import { ChHeaderComponent } from './ch-header/ch-header.component';
+import { HeaderComponent } from './header/header.component';
 
 @NgModule({
-  declarations: [ChHeaderComponent,],
+  declarations: [HeaderComponent,],
   imports: [
     CommonModule,
     IonicModule,
     FormsModule,
   ],
-  exports: [ChHeaderComponent]
+  exports: [HeaderComponent]
 })
 export class ComponentsModule { }
