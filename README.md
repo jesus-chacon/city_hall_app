@@ -33,3 +33,8 @@ SERVER_GRAPHQL="/graphql"
 ```javascript
 sudo npm install -g ionic
 ```
+### Client CLI --> Generate Components
+
+```javascript
+ionic g component components/myComponent --export
+```
