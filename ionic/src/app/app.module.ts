@@ -13,16 +13,18 @@ import { AppRoutingModule } from './app-routing.module';
 import { ApolloModule, APOLLO_OPTIONS } from "apollo-angular";
 import { HttpLinkModule, HttpLink } from "apollo-angular-link-http";
 import { InMemoryCache } from "apollo-cache-inmemory";
-import { ChHeaderComponent } from './components/ch-header/ch-header.component';
+
+import { ComponentsModule } from './components/components.module';
 
 @NgModule({
-  declarations: [AppComponent, ChHeaderComponent,],
+  declarations: [AppComponent,],
   entryComponents: [],
   imports: [
     BrowserModule,
     HttpClientModule,
     ApolloModule,
     HttpLinkModule,
+    ComponentsModule,
     IonicModule.forRoot(),
     AppRoutingModule
   ],
@@ -36,7 +38,7 @@ import { ChHeaderComponent } from './components/ch-header/ch-header.component';
         return {
           cache: new InMemoryCache(),
           link: httpLink.create({
-            uri: '//localhost:4000'
+            uri: '//localhost:5000/graphql'
           })
         }
       },
